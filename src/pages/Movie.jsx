@@ -35,7 +35,7 @@ const Movie = () => {
     }, [])
 
     return (
-        <div>
+        <div className="moviePage">
             {!movie && <>Carregando...</>}
             {movie &&
                 <>
@@ -53,7 +53,7 @@ const Movie = () => {
                         <h3><BsHourglassSplit /> Duração:</h3>
                         <p>{movie.runtime} minutos</p>
                     </div>
-                    <div className="info">
+                    <div className="info description">
                         <h3><BsFillFileEarmarkTextFill /> Descrição:</h3>
                         <p>{movie.overview}</p>
                     </div>
